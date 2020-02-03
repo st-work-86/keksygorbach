@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html> <!--<![endif]-->
+    <head>
+        <title>ЧП Горбач - кексы и кондитирские изделия</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/reset.css" type="text/css"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css"/>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+		<![endif]-->
+		
+		<!-- superfish -->
+		<link rel="stylesheet" href="superfish-master/src/css/gorbach.css" media="screen">
+		<script src="superfish-master/src/js/hoverIntent.js"></script>
+		<script src="superfish-master/src/js/superfish.js"></script>			
+		
+		<!-- bxSlider -->
+		<script src="jquery.bxslider/jquery.bxslider.min.js"></script>
+		<link href="jquery.bxslider/keksygorbach.bxslider.css" rel="stylesheet" />		
+		
+		<!-- custom js -->
+		<script>
+		function preload(arrayOfImages) {
+			$(arrayOfImages).each(function () {
+				$('<img />').attr('src',this).appendTo('body').css('display','none');
+			});
+		}				
+		$(document).ready(function(){
+			
+			preload([
+				'images/social-hover.png',
+				'images/socialicon-fb-hover.png',
+				'images/socialicon-twitter-hover.png',
+				'images/socialicon-vk-hover.png',
+				'images/submenu-bubble.png',
+				'images/submenu-bubble2.png',
+				'images/menu-bullet1.png',
+				'images/menu-bullet2.png'
+			]);
+			
+			$('ul#yam-menu-top').superfish();
+			
+			$(".yam-menu-left ul li ul").parent().addClass("sub");
+			$(".yam-menu-left > ul > li.sub > a").click(function() {
+				if ($(this).parent().attr('class') !== 'sub active' && $(this).parent().attr('class') !== 'active sub') {
+					$('.yam-menu-left ul li ul').slideUp();
+					$(this).next().slideToggle();
+					$('.yam-menu-left > ul > li').removeClass('active');
+					$(this).parent().addClass('active');
+				}
+				else {
+					$(this).next().slideToggle();
+				}
+				return false;
+			});
+
+			$('.yam-menu-left > ul > li.active.sub > ul').show();
+
+			$(".yam-menu-left > ul > li > ul > li > ul").prev().parent().addClass("sub");
+			$(".yam-menu-left > ul > li > ul > li.sub").hover(function() {
+				if ($(this).attr('class') == 'sub') {
+					$('> ul', this).slideDown(0);
+					$('> ul', this).prev().addClass("active");
+				}}, function(){
+				$('> ul', this).slideUp(0);
+				$('> ul', this).prev().removeClass("active");
+			});			
+			
+			$('.header-main-slider > ul').bxSlider({
+				auto: true,
+				slideWidth: 180,
+				maxSlides: 6,
+				moveSlides: 1,
+				pager: false
+			});			
+			
+		});
+		</script>
+		
+    </head>
+    <body>
+		<div class="wrap">
+				<header>
+					
+					<div class="header-left">					
+						<div class="yam-share-area">
+							<a href="#" class="yam-share-icon-vkontakte" title="ВКонтакте"><span></span></a>
+							<a href="#" class="yam-share-icon-facebook" title="Фейсбук"><span></span></a>
+							<a href="#" class="yam-share-icon-twitter" title="Твиттер"><span></span></a>
+						</div>
+						<div class="clear"></div>
+						<div class="yam-include-area phone">
+							<a class="tel" href="tel:+380688077807">+380 (68) 807-78-07</a>
+							<a class="tel" href="tel:+380674682020">+380 (67) 468-20-20</a>
+						</div>
+					</div>					
+					
+					<nav>
+						<div class="yam-menu yam-menu-top"> 
+							<ul id="yam-menu-top" class="sf-menu">
+								<li class="active"><a href="#">О нас</a>
+									<ul>
+										<li class="ul-before"></li>
+										<li><a href="#">Кекс творожный Кекс творожный Кекс творожный</a></li>
+										<li><a href="#">Круассан</a></li>
+										<li><a href="#">Сахаристые</a></li>
+										<li><a href="#">Мучные</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Партнерам</a></li>
+								<li><a href="#">Доставка</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+							<div class="clear"></div>
+						</div>
+					</nav>
+
+					<div class="clear"></div>					
+					
+					<div class="yam-include-area logo">
+						<a href="#" title="На главную">
+							<img src="images/logo.png" alt="" />
+							<div class="sub">
+								<p>Кексы и</p>
+								<p>кондитерские изделия</p>
+							</div>
+						</a>
+					</div>
+					
+					<div class="header-main-slider">
+						<ul>
+							<li>
+								<a href="#" title="Кекс творожный">
+									<span class="img"><span><img src="images/slider/keks.png" alt="" /></span></span>
+									<span class="text">Кекс творожный</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="Сочник">
+									<span class="img"><span><img src="images/slider/sochnik.png" alt="" /></span></span>
+									<span class="text">Сочник</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="Торты">
+									<span class="img"><span><img src="images/slider/cake.png" alt="" /></span></span>
+									<span class="text">Торты</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="Маффины">
+									<span class="img"><span><img src="images/slider/maffin.png" alt="" /></span></span>
+									<span class="text">Маффины</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="Круассан">
+									<span class="img"><span><img src="images/slider/kruassan.png" alt="" /></span></span>
+									<span class="text">Круассан</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="Слойка">
+									<span class="img"><span><img src="images/slider/sloyka.png" alt="" /></span></span>
+									<span class="text">Слойка</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="Сливочный эклер">
+									<span class="img"><span><img src="images/slider/ekler.png" alt="" /></span></span>
+									<span class="text"><span>Сливочный эклер</span><span class="small"> (абрикосовая начинка)</span></span>
+								</a>
+							</li>							
+						</ul>	
+					</div>
+					
+					
+				</header>
+				<div class="content">
+					<aside class="left-sidebar">
+						<div class="yam-include-area"></div>	
+						<div class="yam-menu yam-menu-left">
+							<ul id="yam-menu-left">
+								<li>
+									<a href="#">Кекс творожный</a>
+									<ul>
+										<li><a href="#"><span>Сливочный эклер с вишневой начинкой</span></a></li>
+										<li><a href="#"><span>Сливочный эклер с абрикосовой начинкой</span></a></li>
+										<li>
+											<a href="#"><span>Слойка</span></a>
+											<ul>
+												<li class="arrow-side"></li>
+												<li><a href="#"><span>Сливочный эклер с вишневой начинкой</span></a></li>
+												<li><a href="#"><span>Сливочный эклер с вишневой начинкой</span></a></li>
+												<li><a href="#"><span>Сливочный эклер с вишневой начинкой</span></a></li>
+												<li><a href="#"><span>Сливочный эклер с вишневой начинкой</span></a></li>
+												<li><a href="#"><span>Сливочный эклер с вишневой начинкой</span></a></li>
+												<li><a href="#"><span>Сливочный эклер с вишневой начинкой</span></a></li>
+											</ul>
+										</li>
+										<li><a href="#"><span>Круассан</span></a></li>
+										<li><a href="#"><span>Сахаристые</span></a></li>
+										<li><a href="#"><span>Мучные</span></a></li>
+									</ul>								
+								</li>
+								<li><a href="#">Сочник</a></li>
+								<li><a href="#">Эклер Сгущенное молоко</a></li>
+								<li><a href="#">Эклер с масляным кремом</a></li>
+								<li class="active">
+									<a href="#">Эклер Масло с фруктовой начинкой</a>
+									<ul>
+										<li><a href="#"><span>Сливочный эклер с вишневой начинкой</span></a></li>
+										<li><a href="#"><span>Сливочный эклер с абрикосовой начинкой</span></a></li>
+										<li>
+											<a href="#"><span>Слойка</span></a>
+											<ul>
+												<li class="arrow-side"></li>
+												<li><a href="#"><span>Сливочный эклер с вишневой начинкой</span></a></li>
+												<li><a href="#"><span>Сливочный эклер с вишневой начинкой</span></a></li>
+												<li><a href="#"><span>Сливочный эклер с вишневой начинкой</span></a></li>
+												<li><a href="#"><span>Сливочный эклер с вишневой начинкой</span></a></li>
+												<li><a href="#"><span>Сливочный эклер с вишневой начинкой</span></a></li>
+												<li><a href="#"><span>Сливочный эклер с вишневой начинкой</span></a></li>
+											</ul>
+										</li>
+										<li><a href="#"><span>Круассан</span></a></li>
+										<li><a href="#"><span>Сахаристые</span></a></li>
+										<li><a href="#"><span>Мучные</span></a></li>
+									</ul>
+								</li>
+								<li><a href="#">Сливочный эклер с вишневой начинкой</a></li>
+								<li><a href="#">Сливочный эклер с абрикосовой начинкой</a></li>
+								<li><a href="#">Слойка</a></li>
+								<li><a href="#">Круассан</a></li>
+								<li><a href="#">Торты</a></li>
+								<li><a href="#">Маффины</a></li>	
+							</ul>
+						</div>	
+						<div class="yam-include-area"></div>
+						
+						<div class="obr_svayz">
+							<span>Обратная связь</span>
+							<form>
+								<input type="text" placeholder="Имя..." />
+								<input type="text" placeholder="Телефон..." />
+								<input type="email" placeholder="Почта..." />
+								<textarea placeholder="Сообщение..."></textarea>
+								<input type="submit" value="Отправить" />
+							</form>
+						</div>
+					</aside>
+					<div class="sekciya">
+						<div class="yam-breadcrumbs">
+							<ul>
+								<li><span><a href="#">О нас</a></span></li>
+								<li><span><a href="#">Кондитирские изделия</a></span></li> 
+							</ul>
+							<div class="clear"></div>
+						</div>
+						<div class="text">
+							<hr />
+							<h1 class="cake-bg">Приветствуем Вас на сайте <strong>ЧП Горбач</strong> кондитерских изделий! </h1>
+							<p><i><strong>Кондитерские изделия</strong></i> — это изделия, в состав которых входят: сахар (или другое сладкое вещество), сливочное масло, молоко, различные фрукты и ягоды, патока, ядра орехов, какао-бобы, мука и другие компоненты. Как правило, это сладкие продукты, особенностью которых является красивый внешний вид, приятный вкус и аромат, высокая калорийность, пищевая ценностью и хорошая усвояемость. <a href="#">Выбор кондитерских изделий</a>, которые изготовляются в нашей стране, разнообразен, постоянно изменяется и насчитывает около 5000 наименований. Содержащийся в кондитерских изделиях комплекс необходимых человеческому организму веществ (углеводов, жиров, белков, витаминов, минеральных веществ и др.) обуславливает их высокую пищевую ценность.</p>
+							<p>&nbsp;</p>
+							<h2>Кондитерские изделия подразделяются на две основные группы:</h2>
+							<h3>Кондитерские изделия подразделяются на две основные группы:</h3>
+							<h4>Кондитерские изделия подразделяются на две основные группы:</h4>
+							<h5>Кондитерские изделия подразделяются на две основные группы:</h5>
+							<ul>
+								<li>Сахаристые, такие как карамель, шоколад, фруктово-ягодные изделия, конфеты, драже, ирис, какао-порошок, халву и восточные сладости.</li>
+								<li>Мучные - такие изделия , как торты, печенье, пряники, пирожные, кексы, вафли, рулеты, мучные восточные сладости, ромовые бабы.</li>
+							</ul>						
+							<hr />
+							<article>
+								<img src="images/article1.jpg" alt="" />
+								<div class="article-body">
+									<div class="article-heading">
+									Пасхальные кондитерские изделия
+									</div>
+									<div class="article-body">
+									<p>Не смотря на то, что в нашей стране уже столько лет Пасху отмечают открыто и величественно, многие продолжают называть традиционные кондитерские изделия этого праздника пасхами. На самом деле пасха представляет собой спрессованный свежий сладкий творог, который сдобрят фруктами, цукатами и ванилью. Готовится такое кондитерское изделие как пасха в специальных формах. А то, что привыкли выпекать наши мамы еще по старой советской традиции в жестяных консервных банках, – это куличи.</p>
+									</div>
+									<a class="more-button" href="#"><img src="images/button-more.png" alt="" /></a>
+								</div>
+								<div class="clear"></div>
+							</article>
+							<article>
+								<img src="images/article2.jpg" alt="" />
+								<div class="article-body">
+									<div class="article-heading">
+									За вафлями – в Брюссель
+									</div>
+									<div class="article-body">
+									<p>Не смотря на то, что в нашей стране уже столько лет Пасху отмечают открыто и величественно, многие продолжают называть традиционные кондитерские изделия этого праздника пасхами. На самом деле пасха представляет собой спрессованный свежий сладкий творог, который сдобрят фруктами, цукатами и ванилью. Готовится такое кондитерское изделие как пасха в специальных формах. А то, что привыкли выпекать наши мамы еще по старой советской традиции в жестяных консервных банках, – это куличи.</p>
+									</div>
+									<a class="more-button" href="#"><img src="images/button-more.png" alt="" /></a>
+								</div>
+								<div class="clear"></div>
+							</article>
+							<div class="delivery" class="yam-include-area">
+								<h2>ДОСТАВКА ПО УКРАИНЕ!</h2>
+								<p>Кондитерские изделия – это всеми любимые сладости и десерты, которые создают для нас праздничное настроение.
+								Заказать товар Вы можете по тел.:</p>
+								<a class="tel" href="#">+ 380 (68) 807-78-07</a>
+								<a class="tel" href="#">+ 380 (67) 468-20-20</a>
+								<div class="clear"></div>
+							</div>
+							<hr />
+							<h1 class="cookie">Таблица калорийности для кондитерских изделий, шоколада и конфет</h1>
+							<table class="ct">
+								<tbody>
+									<tr><th>Наименование продукта</th><th>Энергетическая ценность, ккал / 100 гр.</th></tr>						
+									<tr><td>Вафли с фруктовыми начинками</td><td>342</td></tr>
+									<tr><td>Вафли с жиросодержащими начинками</td><td>530</td></tr>
+									<tr><td>Пирожное слоеное с кремом</td><td>544</td></tr>
+									<tr><td>слПирожноеоеное с яблоком</td><td>454</td></tr>
+								</tbody>
+							</table>							
+						</div>
+					</div>
+					<div class="clear"></div>
+			</div>
+		</div>
+		<footer>
+			<div class="footer_bg">
+				<div class="wrap">
+					<div class="footer-top">
+					
+						<div class="yam-include-area footer_logo">
+							<a href="#" title="На главную">
+								<img src="images/logo.png" alt="" />
+								<div class="sub">
+									<p>Кексы и</p>
+									<p>кондитерские изделия</p>
+								</div>
+							</a>
+						</div>	
+
+						<nav>
+							<div class="yam-menu yam-menu-bottom"> 
+								<ul id="yam-menu-bottom" class="sf-menu">
+									<li class="active"><a href="#">О нас</a></li>
+									<li><a href="#">Партнерам</a></li>
+									<li><a href="#">Доставка</a></li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+						</nav>	
+
+						<div class="clear"></div>
+						
+						<div class="yam-include-area phone">
+							<a class="tel" href="tel:+380688077807">+380 (68) 807-78-07</a>
+							<a class="tel" href="tel:+380674682020">+380 (67) 468-20-20</a>
+						</div>
+						
+						<div class="yam-share-area">
+							<a href="#" class="yam-share-icon-vkontakte" title="ВКонтакте"><span></span></a>
+							<a href="#" class="yam-share-icon-facebook" title="Фейсбук"><span></span></a>
+							<a href="#" class="yam-share-icon-twitter" title="Твиттер"><span></span></a>
+						</div>						
+						
+					</div>
+					<div class="yam-include-area yam-counters-area">	
+						<a href="#"><img src="images/ganalytics.gif" alt=""/></a>
+						<a href="#"><img src="images/ganalytics.gif" alt=""/></a>
+					</div>
+					<div class="copyright">
+						<a href="http://yamasters.com.ua/"><img src="images/yamasters.png" alt="" /></a>
+						<div class="text">
+						© 2013 keksygorbach.com.ua Все права защищены<br>
+						Сайт создан компанией <a href="http://yamasters.com.ua/">«Я-Мастерс»</a>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</footer>		
+    </body>
+</html>

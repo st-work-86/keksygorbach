@@ -1,0 +1,504 @@
+html, body { min-width: 1240px; height:100%; font-family: 'PT Sans', sans-serif;}
+
+body {background: #f9f3e8 url(../images/bg-gradient.jpg) repeat-x top left;}
+
+.clear { clear: both;}
+.wrap { width:1240px; margin: 0 auto; position:relative;}
+.odin { height:1px;}
+/*.knizu { height: auto !important; min-height: 100%;}*/
+
+/******************* Шапка **************************/
+header {
+    position:relative;
+    width:100%;
+	height: 636px;
+	background: transparent url(../images/header.jpg) no-repeat top right;
+	margin-bottom: 50px;
+}
+
+header .header-left {
+	width: 302px;
+	height: 110px;
+	background: url(../images/strawberry-cake.png) no-repeat 0px 46px;
+	padding-top: 11px;
+	float: left;
+}
+
+header nav {
+	float: right;
+	height: 160px;
+	margin-bottom: 10px;
+}
+
+header .header-main-slider {
+	width: 1234px;
+	height: 129px;
+	background: url(../images/header-slider-bg.jpg) no-repeat 0px 0px;
+	margin: 107px 0 0 3px;
+}
+
+
+/******************* Верхнее меню *************************/
+.yam-menu-top { }
+#yam-menu-top { }
+
+#yam-menu-top a { text-decoration: none;}
+
+#yam-menu-top > li {
+}
+
+#yam-menu-top > li > a {
+}
+
+#yam-menu-top > li:hover > a, #yam-menu-top > li.active > a {
+}
+
+#yam-menu-top > li:hover > ul {
+    display: block;
+}
+/*************************** Второй уровень *********************/
+#yam-menu-top > li > ul {
+    display: none;
+    position: absolute;
+}
+
+#yam-menu-top > li > ul > li {
+}
+
+#yam-menu-top > li > ul > li > a {
+}
+
+/********************* Третий уровень ************/
+#yam-menu-top > li > ul > li > ul {
+    position: absolute;
+    display: none;
+}
+
+#yam-menu-top > li > ul > li > ul > li {
+}
+
+#yam-menu-top > li > ul > li > ul > li > a {
+}
+
+/**************************** Конец верхнего меню ***************/
+.logo {
+	margin-top: 40px;
+	height: 189px;
+}
+.logo a {
+	text-decoration: none;
+}
+.logo a img {
+	margin-left: 20px;
+}
+.logo .sub {
+	background: url(../images/fork.png) no-repeat 0 0;
+	padding-left: 27px;
+	margin-top: 10px;
+}
+.logo .sub p {
+	color: #8c8c8c;
+	text-transform: uppercase;
+	font-size: 23px;
+	margin: 0;
+	font-family: 'PT Sans Narrow', sans-serif;
+	-webkit-transition: all .2s;
+	transition: all .2s;
+}
+.logo a:hover .sub p {
+	color: #fe3c13;
+}
+
+.phone {
+	margin-left: 64px;
+	margin-top: 10px;
+}
+.phone a.tel {
+	display:block;
+	text-decoration:none;
+	cursor:default;
+	color: #fff;
+	font-family: 'Lobster', cursive !important;
+	font-size: 22px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+.email {
+}
+
+.yam-share-area { margin-left: 92px; }
+.yam-share-area a { display:block; width:43px; height:43px; float:left; background-image:url("../images/social.png"); background-repeat:no-repeat; background-position: 0px 0px; margin-right: 5px; }
+.yam-share-area a:hover { background-image:url("../images/social-hover.png"); background-position: 1px 0px;}
+.yam-share-area a  span{ display:block; width: 100%; height: 100%; background-position: 50% 50%; background-repeat: no-repeat; }
+.yam-share-area a.yam-share-icon-facebook span { background-image: url(../images/socialicon-fb.png); }
+.yam-share-area a.yam-share-icon-facebook:hover span { background-image: url(../images/socialicon-fb-hover.png); margin-right: 2px; }
+.yam-share-area a.yam-share-icon-twitter span { background-image: url(../images/socialicon-twitter.png); margin-top: -1px; }
+.yam-share-area a.yam-share-icon-twitter:hover span { background-image: url(../images/socialicon-twitter-hover.png); margin-top: -1px; }
+.yam-share-area a.yam-share-icon-vkontakte span{ background-image: url(../images/socialicon-vk.png); margin-left: 2px; }
+.yam-share-area a.yam-share-icon-vkontakte:hover span { background-image: url(../images/socialicon-vk-hover.png); margin-left: 2px; }
+/************************* конец шапка *******************/
+
+/********************* Основная часть ********************/
+.content {
+}
+
+.aside {
+	float:left;
+}
+
+/******************* Левое меню *************************/
+.left-sidebar {
+  float: left;
+  width: 274px;
+  position: relative;
+}
+
+.yam-menu-left {
+  position: relative;
+  padding: 10px 0px;
+  background: #f2520f;
+  border: 2px #7a6e64 solid;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;  
+}
+.yam-menu-left > ul {
+  position: relative;
+  z-index: 5;
+  display: block;
+  margin: 0 0 0 0;
+  background: #f9f3e8;
+  padding: 0;
+}
+.yam-menu-left > ul > li {
+  display: block;
+  position: relative;
+}
+.yam-menu-left > ul > li > a {
+  display: block;
+  color: #6e5332;
+  font-size: 17px;
+  position: relative;
+  padding: 14px 14px;
+  width: 232px;
+  margin: 0 auto;
+  text-align: center;
+  color: #000;
+  font-size: 19.55px;
+  text-decoration: none;
+  border-bottom: 1px #a9a59d dashed;
+  -webkit-transition: color .2s;
+  transition: color .2s;  
+}
+.yam-menu-left > ul > li:last-child > a {
+  border-bottom: none;
+}
+.yam-menu-left > ul > li.active,
+.yam-menu-left > ul > li:hover {
+	background: transparent url(../images/menu-bullet1.png) no-repeat 11px 18px;
+}
+.yam-menu-left > ul > li:hover > a,
+.yam-menu-left > ul > li.active > a {
+	color: #ce3a19;
+	background: transparent url(../images/menu-bullet1.png) no-repeat 249px 18px;
+}
+.yam-menu-left > ul > li > ul {
+  width: 260px;
+  margin: 10px auto;
+  padding: 0;
+  position: relative;
+  z-index: 10;
+  display: none;
+  background: #e9e2d3;
+  box-shadow: inset 0 0 5px -2px rgba(188, 171, 131, 0.9);
+  -webkit-box-shadow: inset 0 0 10px -1px rgba(188, 171, 131, 0.9);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;    
+}
+.yam-menu-left > ul > li > ul li {
+  display: block;
+  position: relative;
+  width: 240px;
+  margin: 0 auto;
+}
+.yam-menu-left > ul > li > ul li > a {
+  padding: 9px 0px;
+  display: block;
+  width: 240px;
+  color: #6e5332;
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  position: relative;
+  background: transparent url(../images/sub-menu-hr.jpg) bottom center repeat-x;  
+}
+.yam-menu-left > ul > li > ul li:last-child > a {
+  background: none;
+}
+.yam-menu-left > ul > li > ul > li a span {
+	display: block;
+	padding: 0px 15px 0px 5px;
+  -webkit-transition: color .2s;
+  transition: color .2s; 
+ 
+}
+.yam-menu-left > ul > li > ul li.active > a > span,
+.yam-menu-left > ul > li > ul li:hover > a > span {
+  color: #ce3a19;
+  padding: 0px 0px 0px 20px;
+  background: transparent url(../images/menu-bullet2.png) no-repeat 2px 4px;
+}
+.yam-menu-left > ul > li > ul > li > ul {
+  padding: 0px;
+  position: absolute;
+  left: 267px;
+  display: none;
+  top: 0px;
+  width: 260px;
+  z-index: 10;
+  background: #e3ddcf;
+  border: 2px solid #7a6e64;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.yam-menu-left > ul > li > ul > li > ul > li {
+  display: block;
+  position: relative;
+}
+.yam-menu-left > ul > li > ul > li > ul > li.arrow-side {
+	width: 11px;
+	height: 20px;
+	background: url(../images/submenu-bubble2.png) top right no-repeat;
+	position: absolute;
+	z-index: 100;
+	left: -40px;
+	top: 10px;
+	padding-left: 30px;
+}
+/**************************** Конец Левого меню ***************/
+
+/******* Обратная связь ********/
+.obr_svayz {
+	border: 2px #7a6e64 solid;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-top: 13px;
+	background: #e3ddcf;
+	margin-bottom: 50px;
+}
+.obr_svayz span { 
+	display: block;
+	color: #fff;
+	font-size: 21px;
+	height: 42px;
+	line-height: 42px;
+	text-transform: uppercase;
+	text-align: center;
+	background: #f49d59 url(../images/obr-svyaz.jpg) repeat-x top center;
+}
+.obr_svayz input[type="text"], .obr_svayz input[type="email"], .obr_svayz textarea {
+	border: 0;
+	margin: 0;
+	display:block;
+	padding:0 10px;
+	width:250px;
+	height:39px;
+	font-family: 'PT Sans';
+	font-size:17px;
+	color: #8d7e73;
+	background: #e3ddcf url(../images/sub-menu-hr.jpg) repeat-x bottom center;
+}
+.obr_svayz input[type="text"], .obr_svayz input[type="email"] {
+	margin-bottom: 2px;
+}
+.obr_svayz textarea {
+	border: 0;
+	margin: 0;
+	resize:none;
+	height:127px;
+	padding:10px;
+	font-family: 'PT Sans';
+	font-size:17px;
+	color: #8d7e73;	
+	background-image: none;
+}
+.obr_svayz input[type="submit"] {
+	display:block;
+	border:none;
+	background:red;
+	color:#ffffff;
+	margin:0 auto;
+	cursor:pointer;
+	position: absolute;
+	width: 131px;
+	height: 27px;
+	background: url(../images/button-send.png);
+	text-indent: -9999px;
+	z-index: 100;
+	margin-left: 65px;
+	margin-top: -13px;
+}
+
+/************** Контент ************/
+.sekciya {
+	float:right;
+	width: 937px;
+}
+
+.yam-breadcrumbs {
+}
+
+.yam-breadcrumbs ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.yam-breadcrumbs ul li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	float: left;
+	padding-left: 30px;
+	background:  transparent url(../images/breadcrumbs-arrow.png) no-repeat 5px 7px;
+	color: #343434;
+	font-size: 16px;	
+}
+
+.yam-breadcrumbs ul li:first-child {
+	padding-left: 0px;
+	background:  none;
+}
+
+.yam-breadcrumbs ul li a {
+	color: #343434;
+	text-decoration: none;
+	-webkit-transition: color .2s;
+	transition: color .2s;  	
+}
+
+.yam-breadcrumbs ul li a:hover {
+	color: #b04c00;
+}
+
+hr {
+	margin: 10px 0px;
+	padding: 0;
+	border: 0;
+	height: 2px;
+	background: url(../images/sub-menu-hr.jpg) repeat-x;
+}
+.sekciya i { font-style: italic; }
+.sekciya p { margin-bottom: 7px; font-size:18px; color:#757575; text-indent: 20px; line-height: 27px;}
+.sekciya .text { margin-bottom: 7px; font-size:18px; color:#757575; line-height: 27px;}
+.sekciya h1 { font-size: 24.64px; line-height: 24.64px; font-weight: normal; color: #343434; margin: 15px 0px; }
+.sekciya h2 { font-size: 24px; line-height: 24px; font-weight: normal; color: #343434; margin: 15px 0px;}
+.sekciya h3 { font-size: 22px; line-height: 22px; font-weight: normal; color: #343434; margin: 15px 0px; }
+.sekciya h4 { font-size: 21px; line-height: 21px; font-weight: normal; color: #343434; margin: 15px 0px; }
+.sekciya h5 { font-size: 20px; line-height: 20px; font-weight: normal; color: #343434; margin: 15px 0px; }
+.sekciya h1.cake-bg { background: url(../images/cake.png) no-repeat; min-height: 51px; padding-left: 100px; padding-top: 20px; }
+.sekciya h1.cookie { background: url(../images/cookie.png) no-repeat; min-height: 51px; padding-left: 63px; padding-top: 20px; margin-bottom: 0px; }
+.sekciya a { color:#b04c00; text-decoration: underline; }
+.sekciya .text ul { list-style: none; padding-left: 0px;}
+.sekciya .text ul li { line-height: 20px; list-style: none; display: block; position: relative; margin-bottom: 5px; text-indent: 20px; }
+.sekciya .text ul li:before { content: ""; display: block; position: absolute; margin-top: 7px; width: 8px; height: 8px; background: url(../images/li-bullet.png); }
+.sekciya article { padding: 15px 0px 5px 0px; }
+.sekciya article .article-heading { color: #d53827; font-size: 20px; text-transform: uppercase; margin-bottom: 20px; }
+.sekciya article img { float: left; border: 10px #fff solid; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; margin-right: 30px; -webkit-box-shadow: 2px 2px 5px rgba(122, 110, 100, 0.5); -moz-box-shadow: 2px 2px 5px rgba(122, 110, 100, 0.5); box-shadow: 2px 2px 5px rgba(122, 110, 100, 0.5); }
+.sekciya article a.more-button { float: right; }
+.sekciya article a.more-button img { border: 0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
+.sekciya .delivery { background: #fffcf6 url(../images/cookies.png) 18px 16px no-repeat; padding: 18px 18px 18px 84px; margin: 20px 0 30px 0; border-top: 1px #ebe8e3 solid;}
+.sekciya .delivery h1 { margin-top: 0; color: #d53827; }
+.sekciya .delivery h2 { margin-top: 0; color: #d53827; }
+.sekciya .delivery h3 { margin-top: 0; color: #d53827; }
+.sekciya .delivery h4 { margin-top: 0; color: #d53827; }
+.sekciya .delivery h5 { margin-top: 0; color: #d53827; }
+.sekciya .delivery p { text-indent: 0; }
+.sekciya .delivery .tel { font-size: 18px; font-weight: bold; color: #757575; text-decoration: none; clear: both; display: block; float: left;}
+.text img { display:block;}
+.text img[align="right"] {float: right;margin:0 0 10px 10px;}
+.text img[align="left"] {float: left; margin:0 10px 10px 0;}
+.text img.nost { } /* Здесь убераем бордеры, паддинги, бэкграунды если задавали ( на странице контакты для маленьких пиктограм они не нужны) */
+.text table.ct {
+	width: 100%;
+    border-spacing: 2px;
+    border-collapse: separate;	
+}
+.text table.ct th { color: #757575; font-weight: bold; text-align: center; font-size: 18px; background: #eae3d5; padding: 10px; }
+.text table.ct td { color: #757575; font-weight: normal; text-align: center; font-size: 18px; background: #fffcf6; padding: 10px; }
+/*************** Футер *************/
+footer {
+	height:400px; 
+	position:relative;
+	background: url(../images/footer-gradient.jpg) 0px -80px repeat-x;
+}
+
+.footer_bg {
+	width: 100%;
+	height: 400px;
+	background: url(../images/footer.png) center top no-repeat;
+}
+
+.footer_logo {
+	margin-top: 40px;
+	height: 189px;
+	float: left;
+}
+.footer_logo a {
+	text-decoration: none;
+}
+.footer_logo .sub {
+	margin-top: 10px;
+}
+.footer_logo .sub p {
+	color: #8f5d4a;
+	text-transform: uppercase;
+	font-size: 23px;
+	margin: 0;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.footer-top {
+	clear: both;
+	width: 100%;
+	height: 306px;
+	background: transparent url(../images/sub-menu-bg.png) repeat-x bottom center;
+}
+
+footer nav {
+	float: right;
+	margin-top: 30px;
+}
+
+footer .phone {
+	float: right;
+	background: url(../images/strawberry-cake.png) no-repeat 0px 0px;	
+	padding-left: 65px;
+	height: 55px;
+	padding-top: 17px;
+	margin-top: -10px;
+}
+footer .phone a.tel {
+	color: #8f5d4a;
+	font-size: 22px;
+	text-shadow: none;
+}
+
+footer .yam-share-area {
+	float: right;
+	margin-top: 10px;
+}
+
+.copyright { float: right; margin-top: 35px; max-width: 50%;}
+.copyright img { float: left; margin: 2px 27px 0 0; }
+.copyright .text { float: left; font-size: 10px; color: #675454;}
+.copyright .text a { text-decoration:none; color: #675454;}
+.copyright .text a:hover { text-decoration:underline; color: red;}
+
+.yam-counters-area { float: left; max-width: 50%; margin-top: 33px;}
+.yam-counters-area a { margin-right: 10px; }
